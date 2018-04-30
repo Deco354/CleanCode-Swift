@@ -4,7 +4,7 @@ class Args {
     private let schema: String
     private let arguments: [String]
     private lazy var valid: Bool = parse()
-    private var unexpectedArguments = Set<Character>()
+    private var unexpectedArguments = NSMutableOrderedSet()
     private var booleanArguments = [Character: Bool]()
     private var numberOfArguments = 0
     
@@ -70,7 +70,7 @@ class Args {
             numberOfArguments += 1
             setBooleanArg(argumentCharacter: argumentCharacter, value: true)
         } else {
-            unexpectedArguments.insert(argumentCharacter)
+            unexpectedArguments.add(argumentCharacter)
         }
     }
     
@@ -91,11 +91,16 @@ class Args {
     }
     
     func errorMessage() -> String {
-        return unexpectedArguments.isEmpty ? "" : unexpectedArgumentMessage()
+        return unexpectedArguments.count == 0 ? "" : unexpectedArgumentMessage()
     }
     
     private func unexpectedArgumentMessage() -> String {
-        return "Argument(s) \(String(unexpectedArguments)) unexpected."
+        var argumentString = ""
+        for argument in unexpectedArguments {
+            let character = argument as! Character
+            argumentString.append(character)
+        }
+        return "Argument(s) \(argumentString) unexpected."
     }
     
     func getBoolean(argument: Character) -> Bool? {
