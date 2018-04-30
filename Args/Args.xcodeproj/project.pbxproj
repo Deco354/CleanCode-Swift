@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7340806A2097A15C00EF6084 /* Args.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734080612097A15C00EF6084 /* Args.framework */; };
+		7340806F2097A15C00EF6084 /* ArgsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340806E2097A15C00EF6084 /* ArgsTests.swift */; };
+		734080712097A15C00EF6084 /* Args.h in Headers */ = {isa = PBXBuildFile; fileRef = 734080632097A15C00EF6084 /* Args.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		734080792097A1B700EF6084 /* Args.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734080782097A1B700EF6084 /* Args.swift */; };
 		73A2DE372094D0CD004E5304 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A2DE362094D0CD004E5304 /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7340806B2097A15C00EF6084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A2DE2B2094D0CD004E5304 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734080602097A15C00EF6084;
+			remoteInfo = Args;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		73A2DE312094D0CD004E5304 /* CopyFiles */ = {
@@ -23,11 +37,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		73A2DE332094D0CD004E5304 /* Args */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Args; sourceTree = BUILT_PRODUCTS_DIR; };
+		734080612097A15C00EF6084 /* Args.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Args.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		734080632097A15C00EF6084 /* Args.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Args.h; sourceTree = "<group>"; };
+		734080642097A15C00EF6084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734080692097A15C00EF6084 /* ArgsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7340806E2097A15C00EF6084 /* ArgsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgsTests.swift; sourceTree = "<group>"; };
+		734080702097A15C00EF6084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734080782097A1B700EF6084 /* Args.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Args.swift; sourceTree = "<group>"; };
+		73A2DE332094D0CD004E5304 /* ArgsTerminal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ArgsTerminal; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A2DE362094D0CD004E5304 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7340805D2097A15C00EF6084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734080662097A15C00EF6084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7340806A2097A15C00EF6084 /* Args.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73A2DE302094D0CD004E5304 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		734080622097A15C00EF6084 /* Args */ = {
+			isa = PBXGroup;
+			children = (
+				734080632097A15C00EF6084 /* Args.h */,
+				734080642097A15C00EF6084 /* Info.plist */,
+				734080782097A1B700EF6084 /* Args.swift */,
+			);
+			path = Args;
+			sourceTree = "<group>";
+		};
+		7340806D2097A15C00EF6084 /* ArgsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7340806E2097A15C00EF6084 /* ArgsTests.swift */,
+				734080702097A15C00EF6084 /* Info.plist */,
+			);
+			path = ArgsTests;
+			sourceTree = "<group>";
+		};
 		73A2DE2A2094D0CD004E5304 = {
 			isa = PBXGroup;
 			children = (
 				73A2DE352094D0CD004E5304 /* Args */,
+				734080622097A15C00EF6084 /* Args */,
+				7340806D2097A15C00EF6084 /* ArgsTests */,
 				73A2DE342094D0CD004E5304 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +106,9 @@
 		73A2DE342094D0CD004E5304 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73A2DE332094D0CD004E5304 /* Args */,
+				73A2DE332094D0CD004E5304 /* ArgsTerminal */,
+				734080612097A15C00EF6084 /* Args.framework */,
+				734080692097A15C00EF6084 /* ArgsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,10 +123,57 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7340805E2097A15C00EF6084 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734080712097A15C00EF6084 /* Args.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		73A2DE322094D0CD004E5304 /* Args */ = {
+		734080602097A15C00EF6084 /* Args */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73A2DE3A2094D0CD004E5304 /* Build configuration list for PBXNativeTarget "Args" */;
+			buildConfigurationList = 734080722097A15C00EF6084 /* Build configuration list for PBXNativeTarget "Args" */;
+			buildPhases = (
+				7340805C2097A15C00EF6084 /* Sources */,
+				7340805D2097A15C00EF6084 /* Frameworks */,
+				7340805E2097A15C00EF6084 /* Headers */,
+				7340805F2097A15C00EF6084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Args;
+			productName = Args;
+			productReference = 734080612097A15C00EF6084 /* Args.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		734080682097A15C00EF6084 /* ArgsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 734080752097A15C00EF6084 /* Build configuration list for PBXNativeTarget "ArgsTests" */;
+			buildPhases = (
+				734080652097A15C00EF6084 /* Sources */,
+				734080662097A15C00EF6084 /* Frameworks */,
+				734080672097A15C00EF6084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7340806C2097A15C00EF6084 /* PBXTargetDependency */,
+			);
+			name = ArgsTests;
+			productName = ArgsTests;
+			productReference = 734080692097A15C00EF6084 /* ArgsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73A2DE322094D0CD004E5304 /* ArgsTerminal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73A2DE3A2094D0CD004E5304 /* Build configuration list for PBXNativeTarget "ArgsTerminal" */;
 			buildPhases = (
 				73A2DE2F2094D0CD004E5304 /* Sources */,
 				73A2DE302094D0CD004E5304 /* Frameworks */,
@@ -77,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = Args;
+			name = ArgsTerminal;
 			productName = Args;
-			productReference = 73A2DE332094D0CD004E5304 /* Args */;
+			productReference = 73A2DE332094D0CD004E5304 /* ArgsTerminal */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -92,6 +198,13 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ibm;
 				TargetAttributes = {
+					734080602097A15C00EF6084 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					734080682097A15C00EF6084 = {
+						CreatedOnToolsVersion = 9.3;
+					};
 					73A2DE322094D0CD004E5304 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -109,12 +222,47 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73A2DE322094D0CD004E5304 /* Args */,
+				73A2DE322094D0CD004E5304 /* ArgsTerminal */,
+				734080602097A15C00EF6084 /* Args */,
+				734080682097A15C00EF6084 /* ArgsTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		7340805F2097A15C00EF6084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734080672097A15C00EF6084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		7340805C2097A15C00EF6084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734080792097A1B700EF6084 /* Args.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734080652097A15C00EF6084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7340806F2097A15C00EF6084 /* ArgsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73A2DE2F2094D0CD004E5304 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,7 +273,114 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7340806C2097A15C00EF6084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 734080602097A15C00EF6084 /* Args */;
+			targetProxy = 7340806B2097A15C00EF6084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		734080732097A15C00EF6084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Args/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibm.Args;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		734080742097A15C00EF6084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Args/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibm.Args;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		734080762097A15C00EF6084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				INFOPLIST_FILE = ArgsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibm.ArgsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		734080772097A15C00EF6084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q7W47GFKL3;
+				INFOPLIST_FILE = ArgsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibm.ArgsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		73A2DE382094D0CD004E5304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -262,6 +517,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		734080722097A15C00EF6084 /* Build configuration list for PBXNativeTarget "Args" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734080732097A15C00EF6084 /* Debug */,
+				734080742097A15C00EF6084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		734080752097A15C00EF6084 /* Build configuration list for PBXNativeTarget "ArgsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734080762097A15C00EF6084 /* Debug */,
+				734080772097A15C00EF6084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		73A2DE2E2094D0CD004E5304 /* Build configuration list for PBXProject "Args" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -271,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73A2DE3A2094D0CD004E5304 /* Build configuration list for PBXNativeTarget "Args" */ = {
+		73A2DE3A2094D0CD004E5304 /* Build configuration list for PBXNativeTarget "ArgsTerminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73A2DE3B2094D0CD004E5304 /* Debug */,
