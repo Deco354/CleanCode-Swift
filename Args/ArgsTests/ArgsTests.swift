@@ -44,11 +44,11 @@ class ArgsTests: XCTestCase {
     //    }
     //
     //
-    //    func testSimpleBooleanTruePresent() {
-    //    let args = Args(withSchema: "x", ["-x", andArguments: "true"])
-    //    XCTAssertEqual(1, args.cardinality())
-    //    XCTAssertEqual(true, args.getBoolean('x'))
-    //    }
+        func testSimpleBooleanTruePresent() {
+        let args = Args(withSchema: "x", andArguments: ["-x",  "true"])
+        XCTAssertEqual(1, args.cardinality())
+            XCTAssertEqual(true, args.getBoolean(argument: "x"))
+        }
     //
     //    // Currently fails...
     //
@@ -74,12 +74,12 @@ class ArgsTests: XCTestCase {
     //    }
     //
     //
-    //    func testMultipleBooleans() {
-    //    let args = Args(withSchema: "x,y", ["-xy", "true", andArguments: "true"])
-    //    XCTAssertEqual(2, args.cardinality())
-    //    XCTAssertEqual(true, args.getBoolean('x'))
-    //    XCTAssertEqual(true, args.getBoolean('y'))
-    //    }
+        func testMultipleBooleans() {
+        let args = Args(withSchema: "x,y", andArguments: ["-xy", "true", "true"])
+        XCTAssertEqual(2, args.cardinality())
+            XCTAssertEqual(true, args.getBoolean(argument: "x"))
+            XCTAssertEqual(true, args.getBoolean(argument: "y"))
+        }
     //
     //    // Currently fails...
     //
