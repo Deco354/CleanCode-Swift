@@ -19,7 +19,7 @@ class Args {
     }
     
     private func parse() -> Bool {
-        if schema.count == 0 && arguments.count == 0 {
+        if schema.isEmpty && arguments.isEmpty {
             return true
         }
         parseSchema()
