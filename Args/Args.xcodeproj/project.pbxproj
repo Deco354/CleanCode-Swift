@@ -11,6 +11,7 @@
 		7340806F2097A15C00EF6084 /* ArgsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340806E2097A15C00EF6084 /* ArgsTests.swift */; };
 		734080712097A15C00EF6084 /* Args.h in Headers */ = {isa = PBXBuildFile; fileRef = 734080632097A15C00EF6084 /* Args.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		734080792097A1B700EF6084 /* Args.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734080782097A1B700EF6084 /* Args.swift */; };
+		737DDEBD20A88BA000596341 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737DDEBC20A88BA000596341 /* ParseError.swift */; };
 		73A2DE372094D0CD004E5304 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A2DE362094D0CD004E5304 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		7340806E2097A15C00EF6084 /* ArgsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgsTests.swift; sourceTree = "<group>"; };
 		734080702097A15C00EF6084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		734080782097A1B700EF6084 /* Args.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Args.swift; sourceTree = "<group>"; };
+		737DDEBC20A88BA000596341 /* ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
 		73A2DE332094D0CD004E5304 /* ArgsTerminal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ArgsTerminal; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A2DE362094D0CD004E5304 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				73A2DE362094D0CD004E5304 /* main.swift */,
+				737DDEBC20A88BA000596341 /* ParseError.swift */,
 			);
 			path = Args;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737DDEBD20A88BA000596341 /* ParseError.swift in Sources */,
 				734080792097A1B700EF6084 /* Args.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
